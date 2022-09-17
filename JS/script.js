@@ -33,10 +33,11 @@ function F() {
   }
 //دالة حساب عمر الكلب بالنسبة لعمر الانسان
 function calcuateDogAge(dogAge){
-    let doginfo={
+    const doginfo={
         _name:"bob",
        age:Number(dogAge*7)
     };
-console.log(`Your doggie is ${doginfo.age} years old in dog years`)
+    return doginfo
 }
-calcuateDogAge(5);
+const dog= calcuateDogAge(4);
+console.log(`Your doggie is ${dog.age} years old in dog years`)
