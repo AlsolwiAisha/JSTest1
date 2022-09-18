@@ -44,3 +44,16 @@ const arr=["Orange","Apple","Pineapple","Grapes"]
 document.querySelector("#filterarr").innerHTML=arr.filter(item=>item==="Orange"||item==="Grapes")
 document.querySelector("#maparr").innerHTML=arr.map(item=>{return item})
 document.querySelector("#findarr").innerHTML=arr.find(item=>item==="Apple")
+
+//Time
+function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+    }
+function display_ct() {
+    var x = new Date()
+    var x1= ` ${x.getHours( )}:${ x.getMinutes()}:${ x.getSeconds()}`;
+    document.querySelector('#clock').innerHTML = x1;
+    display_c();
+     }
+     display_ct();
