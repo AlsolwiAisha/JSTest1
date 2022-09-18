@@ -4,7 +4,6 @@ let y=12;
 let z=x+y;
 
 console.log(z);//view in the console
-document.write(z); // view in my page
 
 var Class= document.getElementsByClassName('action');
 function checkC(){
@@ -39,3 +38,9 @@ function calcuateDogAge(dogAge){
     }
 }
 console.log(`Your doggie is ${calcuateDogAge("6").age} years old in dog years`)
+
+//Homework of Day4 Arrays
+const arr=["Orange","Apple","Pineapple","Grapes"]
+document.querySelector("#filterarr").innerHTML=arr.filter(item=>item==="Orange"||item==="Grapes")
+document.querySelector("#maparr").innerHTML=arr.map(item=>{return item})
+document.querySelector("#findarr").innerHTML=arr.find(item=>item==="Apple")
